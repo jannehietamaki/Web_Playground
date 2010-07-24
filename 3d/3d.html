@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi">
+<head>
+  <title>HTML5 Canvas Demo</title>
+  <link rel="stylesheet" href="3d.css" type="text/css"/>
+  <script type="text/javascript" src="object.js"></script>
+  <script type="text/javascript" src="bitmap.js"></script>
+  <script type="text/javascript" src="3d.js"></script>
+</head>
+<body>
+<div class="content">
+    <canvas id="demoCanvas" width="512" height="512">
+        Your browser does not support the Canvas element, please upgrade.
+    </canvas>
+    <div class="overlay">
+        <h1>3d-js</h1>
+    </div>
+</div>
+<script type="text/javascript">
+  self.addEventListener('load', function () { G3d.init(); }, false);
+</script>
+
+</body>
+</html>
